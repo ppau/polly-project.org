@@ -11,6 +11,7 @@ body, html {
   max-width: 800px;
   padding: 1.7em 1em 2em 1em;
   font-size: 18px;
+  text-shadow: 1px 1px 1px #777;
 }
 
 header,
@@ -52,6 +53,7 @@ h1, h2, h3 {
   margin: 0;
   padding: 0;
   line-height: 1.4em;
+  text-shadow: 1px 1px 2px #666;
 }
 
 h1 {
