@@ -1,16 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
 body, html {
-  font-family: "Scada", "Lucida Sans", sans-serif;
+  font-family: "Open Sans", "Lucida Sans", sans-serif;
   margin: 0;
   padding: 0;
   color: #eee;
   background-color: #777;
 }
 
+nav {
+  background: #444; /* Old browsers */
+  background: -moz-linear-gradient(top,  #444444 0%, #4d4d4d 40%, #4d4d4d 60%, #444444 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(40%,#4d4d4d), color-stop(60%,#4d4d4d), color-stop(100%,#444444)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #444444 0%,#4d4d4d 40%,#4d4d4d 60%,#444444 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #444444 0%,#4d4d4d 40%,#4d4d4d 60%,#444444 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #444444 0%,#4d4d4d 40%,#4d4d4d 60%,#444444 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #444444 0%,#4d4d4d 40%,#4d4d4d 60%,#444444 100%); /* W3C */
+  height: 2em;
+}
+
+nav ul.content {
+  list-style: none;
+  font-size: 0.8em;
+  padding: 0em;
+}
+
+nav li {
+  float: left;
+}
+
+nav a.selected,
+nav a:hover {
+  background: #444; /* Old browsers */
+  background: -moz-linear-gradient(top,  #555555 0%, #5d5d5d 40%, #5d5d5d 60%, #555555 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(40%,#5d5d5d), color-stop(60%,#5d5d5d), color-stop(100%,#555555)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #555555 0%,#5d5d5d 40%,#5d5d5d 60%,#555555 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #555555 0%,#5d5d5d 40%,#5d5d5d 60%,#555555 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #555555 0%,#5d5d5d 40%,#5d5d5d 60%,#555555 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #555555 0%,#5d5d5d 40%,#5d5d5d 60%,#555555 100%); /* W3C */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  line-height: 2.5em;
+  padding: 0 1em;
+  display: block;
+}
+
 .content {
   margin: 0 auto;
   max-width: 800px;
   padding: 1.7em 1em 2em 1em;
-  font-size: 18px;
+  font-size: 1.1em;
   text-shadow: 1px 1px 1px #777;
 }
 
@@ -109,4 +151,15 @@ footer .content {
 
 footer .content p {
   margin: 0.1em 0;
+}
+
+.gpl {
+  vertical-align: middle;
+  opacity: 0.8;
+  position: relative;
+  bottom: 1px;
+}
+
+.gpl:hover {
+  opacity: 1;
 }
