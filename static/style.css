@@ -146,3 +146,11 @@ footer {
 }
 
 #owa-tracker-post-container { display: none; }
+
+@media (max-width: 600px) {
+  #title { font-size: 85%; }
+}
+@media (max-width: 400px) {
+  #title { font-size: 70%; }
+  aside { display: none; }
+}
